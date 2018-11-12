@@ -2,16 +2,16 @@
 # Mark Abramov
 
 def isAll0s(matrixRow):
-    for i in range (len(matrixRow)):
-        if matrixRow[i] != 0:
+    for i in matrixRow:
+        if i != 0:
             return False
     return True
 
 def hasLeading1(matrixRow):
-    for i in range (len(matrixRow)):
-        if matrixRow[i] == 0:
+    for i in matrixRow:
+        if i == 0:
             continue
-        elif matrixRow[i] == 1:
+        elif i == 1:
             return True
     return False
 
